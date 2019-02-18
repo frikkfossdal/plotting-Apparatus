@@ -2,4 +2,4 @@
 
 Project folder for general purpose plotter apparatus. 
 
-[apparatus](/doc/img/20190218-DSC_4306.jpg)
+![](/doc/img/20190218-DSC_4306.jpg)
