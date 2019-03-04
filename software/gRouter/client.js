@@ -1,5 +1,6 @@
 //client program for talking and sending commands to server 
 const readline = require('readline');
+const io = require('socket.io-client'); 
 
 console.log('Client starting');
 
