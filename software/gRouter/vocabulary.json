@@ -1,10 +1,12 @@
 [  
    {  
       "name":"home",
+      "description": "Homing..",
       "gcode":"G28 X Y"
    },
    {  
       "name":"park",
+      "description": "Parking..",
       "gcode":[  
          "G0 X0 Y0",
          "G0 X20 Y20",

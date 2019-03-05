@@ -6,7 +6,7 @@ console.log('Client starting');
 
 //boot sockets
 const client = io.connect('http://localhost:8080');
-client.on('welcome', (message) => {
+client.on('feedback', (message) => {
     console.log(message);
 });
 
@@ -18,6 +18,5 @@ const rl = readline.createInterface({
 });
 
 rl.on('line', (input) => {
-    client.emit('test', input);
-    console.log('ok');
+    client.emit('command', input);
 });
