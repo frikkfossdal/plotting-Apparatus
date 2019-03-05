@@ -8,6 +8,11 @@ class Server {
         this.vocabulary = require('./vocabulary.json');  
     }
 
+    /**
+     * 
+     * @param {command} Name of the command
+     * @returns The command object if it exists, otherwise return false
+     */
     getCommand(command) {
         for(let v of this.vocabulary) {
             if (v.name.toLowerCase() === command.toLowerCase()) return v; 
@@ -30,8 +35,16 @@ class Server {
             socket.emit('welcome', 'server ok');
 
             socket.on('command', (data) => { 
+                //Get command if it exists, otherwise false
                 let command = this.getCommand(data); 
-                !command ? socket.emit('feedback', "Command does not exists") : socket.emit('feedback', command.description); 
+
+                if(command) 
+                    socket.emit('feedback', command.description)
+                else 
+                    socket.emit('feedback', "Command does not exist");
+                
+
+
             });
         })
     }
