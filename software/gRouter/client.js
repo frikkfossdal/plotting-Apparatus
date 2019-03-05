@@ -9,6 +9,9 @@ const client = io.connect('http://localhost:8080');
 client.on('feedback', (message) => {
     console.log(message);
 });
+client.on('welcome', (message)=>{
+	console.log(message);
+}); 
 
 //handle user input
 const rl = readline.createInterface({
