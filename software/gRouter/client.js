@@ -6,9 +6,11 @@ console.log('Client starting');
 
 //boot sockets
 const client = io.connect('http://localhost:8080');
+
 client.on('feedback', (message) => {
-    console.log(message);
+    console.log("From server:",message);
 });
+
 client.on('welcome', (message)=>{
 	console.log(message);
 }); 
