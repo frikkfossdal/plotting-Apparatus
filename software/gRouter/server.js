@@ -1,4 +1,5 @@
 const io = require('socket.io');
+const serial = require('serialport')
 
 class Server {
     constructor(port) {
@@ -22,6 +23,7 @@ class Server {
 
     sendSerial() {
         //Todo
+        //Put packet in buffer
     }
 
     parseCommand(command) {
@@ -37,6 +39,7 @@ class Server {
             socket.on('command', (data) => { 
                 //Get command if it exists, otherwise false
                 let command = this.getCommand(data); 
+                console.log(command);
 
                 if(command) 
                     socket.emit('feedback', command.description)

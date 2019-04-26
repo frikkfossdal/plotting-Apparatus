@@ -6,14 +6,14 @@ s1 = serial.Serial('/dev/cu.usbmodem14201',250000)
 
 
 # Open g-code file
-f1 = open('demo2.gcode','r')
+f1 = open('demo1.gcode','r')
 
 # Wake up grbl
 s1.write(("\r\n\r\n").encode())
 time.sleep(2)   # Wait for grbl to initialize
 s1.flushInput()  # Flush startup text in serial input
 
-s1.write("G92 X0 Y0 Z0 \n".encode()) #go to machine home
+#s1.write("G92 X0 Y0 Z0 \n".encode()) #go to machine home
 
 
 for line in f1:

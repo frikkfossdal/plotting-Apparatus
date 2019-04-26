@@ -1,16 +1,110 @@
-[  
-   {  
-      "name":"home",
+[
+   {
+      "name": "home",
       "description": "Homing..",
-      "gcode":"G28 X Y"
+      "gcode": "G28 X Y"
    },
-   {  
-      "name":"park",
+   {
+      "name": "park",
       "description": "Parking..",
-      "gcode":[  
+      "gcode": [
          "G0 X0 Y0",
          "G0 X20 Y20",
          "G0 X10 Y10"
       ]
+   },
+   {
+      "name": "demo",
+      "description": "Super Sexy Demo",
+      "gcode": [
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20",
+         "G0 X0 Y0",
+         "G0 X20 Y20",
+         "G0 X10 Y10",
+         "G0 X0 Y20"
+      ]
+   },
+   {
+      "name": "test",
+      "description": "Parking..",
+      "gcode": [
+         "G0 X0 Y0"
+      ]
    }
+
 ]
