@@ -21,8 +21,6 @@ parser.on('data', function (data) {
 
 setInterval(()=>{port.write('G0 X0 Y0 \n');}, 1000); 
 
-
-
 //write logic 
 
 function sendCommand(message) {

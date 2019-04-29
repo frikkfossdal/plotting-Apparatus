@@ -2,7 +2,8 @@
    {
       "name": "home",
       "description": "Homing..",
-      "gcode": "G28 X Y"
+      "gcode": ["G28 X Y"
+      ]
    },
    {
       "name": "park",
@@ -103,7 +104,8 @@
       "name": "test",
       "description": "Parking..",
       "gcode": [
-         "G0 X0 Y0"
+         "G0 X0 Y0",
+         "G0 X30 Y100"
       ]
    }
 
