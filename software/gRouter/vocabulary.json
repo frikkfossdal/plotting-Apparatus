@@ -2,7 +2,13 @@
    {
       "name": "home",
       "description": "Homing..",
-      "gcode": ["G28 X Y"
+      "gcode": [
+         "M201 Y1000 Z1000",
+         "G28 Z Y",
+         "G0 Y20 Z20 F9000",
+         "G0 Y4 Z4",
+         "G92 Y0 Z0", 
+         "G0 F5000"
       ]
    },
    {
@@ -101,12 +107,45 @@
       ]
    },
    {
-      "name": "test",
+      "name": "ytest",
       "description": "Parking..",
       "gcode": [
-         "G0 X0 Y0",
-         "G0 X30 Y100"
+         "G0 Z0 Y0",
+         "G0 F3000",
+         "G0 Y40",
+         "G0 Y20",
+         "G0 Y0",
+         "G0 F4000",
+         "G0 Y40",
+         "G0 Y20",
+         "G0 Y0",
+         "G0 F7000",
+         "G0 Y40",
+         "G0 Y20",
+         "G0 Y0"
+      ]
+   },
+   {
+      "name": "ztest",
+      "description": "Parking..",
+      "gcode": [
+         "G0 F6000",
+         "G0 Z0",
+         "G0 Z200",
+         "G0 Z0"
+      ]
+   },
+   {
+      "name": "yztest",
+      "description": "Parking..",
+      "gcode": [
+         "G0 F6000",
+         "G0 Y0 Z0",
+         "G0 Y180 Z200",
+         "G0 F8000",
+         "G0 Y100 Z100", 
+         "G0 Y0 Z0 F6000"
+         
       ]
    }
-
 ]

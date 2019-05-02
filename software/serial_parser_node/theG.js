@@ -27,6 +27,9 @@ class serialTalker {
                     log(chalk.yellow(nextCmd));
                 }
             }
+            if(data.includes('busy')){
+                
+            }
         });
 //handle input from terminal 
         this.in = rl.createInterface({
@@ -34,7 +37,7 @@ class serialTalker {
             output: process.stdout,
             terminal: false
         });
-
+        //
         this.in.on('line', (input) => {
             let command = this.getCommand(input);
             if(command){
@@ -67,10 +70,11 @@ class serialTalker {
         for(let v of this.vocabulary){
             if(v.name.toLowerCase() === command.toLowerCase()) return v; 
         }
+        log(chalk.bold.red('unknown command')); 
         return false; 
     }
 }
-const coms = new serialTalker('/dev/tty.usbmodem14201');
+const coms = new serialTalker('/dev/tty.usbmodem14101');
 
 coms.init();
 //coms.writeBuffer();
